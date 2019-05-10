@@ -29,7 +29,7 @@ node default {
           }
         }
         default: {
-          fail("Unsupported Ubuntu Release: ${::operatingsystem}")
+          fail("Unsupported Ubuntu Release: ${::lsbdistcodename}")
         }
       }
     }
