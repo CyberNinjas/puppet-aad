@@ -27,6 +27,10 @@ node default {
           package { 'libpam-aad':
             ensure => installed
           }
+
+          package { 'openvpn-auth-aad':
+            ensure => installed
+          }
         }
         default: {
           fail("Unsupported Ubuntu Release: ${::lsbdistcodename}")
